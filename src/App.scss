@@ -1,0 +1,48 @@
+$mobile-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
+         @content;
+    }
+}
+
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet-width) {
+         @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: $desktop-width) {
+         @content;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+
+    @include mobile {
+         font-size: 60%;
+    }
+}
+
+body {
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
