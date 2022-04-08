@@ -18,6 +18,7 @@ function Register() {
                email: Yup.string()
                     .required("Required")
                     .matches(
+                         //eslint-disable-next-line
                          /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
                          "Please enter a valid email address"
                     ),

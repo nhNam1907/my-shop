@@ -18,6 +18,7 @@ function Contact() {
                email: Yup.string()
                     .required("Required")
                     .matches(
+                         //eslint-disable-next-line
                          /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
                          "Please enter a valid email address"
                     ),
@@ -27,6 +28,7 @@ function Contact() {
                phone: Yup.string()
                     .required("Required")
                     .matches(
+                         //eslint-disable-next-line
                          /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/,
                          "Must be a valid phone number"
                     ),
