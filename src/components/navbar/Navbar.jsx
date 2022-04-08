@@ -28,7 +28,7 @@ function Navbar() {
                          id="navbarSupportedContent"
                     >
                          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                              <li className="nav-item">
+                              <li className="nav-item me-3">
                                    <NavLink
                                         className="nav-link active"
                                         aria-current="page"
@@ -37,27 +37,27 @@ function Navbar() {
                                         Products
                                    </NavLink>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item me-3">
                                    <NavLink className="nav-link" to="/about">
                                         About
                                    </NavLink>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item me-3">
                                    <NavLink className="nav-link" to="/contact">
                                         Contact
                                    </NavLink>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item me-3">
                                    <NavLink className="nav-link" to="/login">
                                         Login
                                    </NavLink>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item me-3">
                                    <NavLink className="nav-link" to="/register">
                                         Register
                                    </NavLink>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item me-3">
                                    <NavLink className="nav-link" to="/cart">
                                         Cart({state.length})
                                    </NavLink>
