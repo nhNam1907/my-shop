@@ -32,8 +32,13 @@ function Navbar() {
                                    <NavLink
                                         className="nav-link active"
                                         aria-current="page"
-                                        to="/products"
+                                        to="/home"
                                    >
+                                        Home
+                                   </NavLink>
+                              </li>
+                              <li className="nav-item me-3">
+                                   <NavLink className="nav-link" to="/products">
                                         Products
                                    </NavLink>
                               </li>
